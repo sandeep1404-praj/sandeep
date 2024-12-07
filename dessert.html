@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dessert Menu</title>
+    
+</head>
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A79E90;
+}
+
+.container {
+    color: #5E4C47;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #5E4C47;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    color: #5E4C47;
+}
+
+h3 {
+    font-size: 1.6em;
+    color: #5E4C47;
+}
+
+p {
+    font-size: 1em;
+    color: #C69934;
+}
+
+/* Header */
+header {
+    background-color: #5E4C47;
+    color: white;
+    padding: 20px 0;
+}
+
+.navbar{
+  
+  flex: 1;
+  text-align: center;
+}
+.navbar ul li{
+margin-right: 30px;
+  list-style:none ;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.navbar ul li a{
+  color: #C69934;
+  text-decoration: none;
+  font-size: 25px;
+}
+.navbar ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #A79E90;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.name{
+  width: 90%;
+  color: #5E4C47;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+/* Menu */
+.menu {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.item-info {
+    width: 75%;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #C69934;
+}
+
+/* Footer */
+footer {
+    background-color: #5E4C47;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+</style>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="xyz.html">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="menu">
+        <div class="container">
+            <h2>Dessert</h2>
+            
+                
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Creme Brulee</h3>
+                        <p>A healthy and tasty salad with grilled chicken, fresh veggies, and dressing.</p>
+                    </div>
+                    <div class="price">400/-</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Strawberry Shortcake</h3>
+                        <p>A healthy and tasty salad with grilled chicken, fresh veggies, and dressing.</p>
+                    </div>
+                    <div class="price">300/-</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Cannoli</h3>
+                        <p>A healthy and tasty salad with grilled chicken, fresh veggies, and dressing.</p>
+                    </div>
+                    <div class="price">200/-</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Chocolate Brownie</h3>
+                        <p>A healthy and tasty salad with grilled chicken, fresh veggies, and dressing.</p>
+                    </div>
+                    <div class="price">400/-</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Chocolate Brownie</h3>
+                        <p>A healthy and tasty salad with grilled chicken, fresh veggies, and dressing.</p>
+                    </div>
+                    <div class="price">450/-</div>
+                </div>
+                <div class="menu-item">
+                <div class="item-info">
+                    <h3>English Custard</h3>
+                    <p>A healthy and tasty salad with grilled chicken, fresh veggies, and dressing.</p>
+                </div>
+                <div class="price">450/-</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Greek Baklava</h3>
+                    <p>Delicious pasta with a medley of fresh, sautéed vegetables in a light cream sauce.</p>
+                </div>
+                <div class="price">350/-</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Lemon Souffles</h3>
+                    <p>Classic cheeseburger with lettuce, tomato, and a side of crispy fries.</p>
+                </div>
+                <div class="price">350/-</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Tiramisu Layer Cake</h3>
+                    <p>Whole grain wrap filled with fresh vegetables and hummus, served with a side salad.</p>
+                </div>
+                <div class="price">300/-</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 XYZ  | All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
